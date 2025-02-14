@@ -1,4 +1,5 @@
 .BlocoReceitas{
+    display: flex;
     width: 280px;
     height: 180px;
     background-color: black;
