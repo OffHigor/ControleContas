@@ -11,3 +11,29 @@
 .tt{
     color: white;
 }
+.TabelaLancamentoss{
+    background-color: black;
+    width: 40%;
+    height: 400px;
+}
+.Teste{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: 40%;
+    height: 400px;
+}
+input{
+    width: 75%;
+    height: 25px;
+    margin-top: 40px;
+    margin-right:auto;
+    margin-left: auto;
+}
+select{
+    width: 75%;
+    height: 25px;
+    margin-top: 40px;
+    margin-right:auto;
+    margin-left: auto;
+}

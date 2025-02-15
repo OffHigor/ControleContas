@@ -11,3 +11,7 @@
   display: flex;
   justify-content: center;
 }
+.Redirecionador{
+  display: flex;
+  flex-direction: column;
+}
