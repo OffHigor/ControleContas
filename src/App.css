@@ -1,11 +1,11 @@
 .BlocoTabela{
   width: 85%;
-  height: 600px;
-  margin-top: 80px;
+  height: 610px;
+  margin-top: 60px;
   margin-left: auto ;
   margin-right: auto;
   border-radius: 72px;
-  background-color: red;
+  background-color: #83E509;
 }
 .Direcionador{
   display: flex;
@@ -14,4 +14,11 @@
 .Redirecionador{
   display: flex;
   flex-direction: column;
+}
+body{
+  margin: 0px;
+}
+.body{
+  width: 100%;
+  margin: 0px;
 }

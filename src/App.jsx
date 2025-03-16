@@ -1,18 +1,22 @@
 import React from 'react'
 import './App.css'
-import { BlocoReceitas, Transacoes} from './Receitas'
+import {Navbar, BlocoReceitas, Transacoes} from './Receitas'
 
 
 function Bloco(){
-  return( <div className='BlocoTabela'>
+  return( 
+    <div className='body'>
+      <Navbar/>
+  <div className='BlocoTabela'>
     <div className='Redirecionador'>
     <div className='Direcionador'>
-    <BlocoReceitas nome="Saldo" imagem="./src/assets/react.svg" /> 
-    <BlocoReceitas nome="Receita" imagem="./public/vite.svg"/>
-    <BlocoReceitas nome="Despesa" imagem="./public/vite.svg"/>
+    <BlocoReceitas nome="Saldo"  imagem="./src/assets/IconeDinheiro.png" /> 
+    <BlocoReceitas nome="Receita" imagem="./src/assets/IconeGraficoSubindo.png"/>
+    <BlocoReceitas nome="Despesa" imagem="./src/assets/IconeGraficoDescendo.png"/>
     </div>
     <Transacoes/>
     </div>
+  </div>
   </div>
   )
 }
