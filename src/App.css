@@ -16,6 +16,17 @@
   flex-direction: column;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 body{
   margin: 0px;
 }
@@ -29,13 +40,13 @@ body{
 .BlocoLogin{
   display: flex;
   flex-direction: column;
-  width: 30%;
-  height: 75%;
+  width: 24%;
+  height: 60%;
   background-color: #65B307;
   margin-left: auto;
   margin-right: auto;
   border-radius: 48px;
-  border: 5px solid white;
+  border: 3px solid white;
 }
 .ImagemLogo{
   width: 50%;
@@ -43,16 +54,20 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
-form{
-  
-
+.Control{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 .InputUsuario{
   display: flex;
   align-items: center;
   width: 80%;
   height: 40px;
-  margin-top: 20px;
+  margin-top: 45px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -64,10 +79,27 @@ form{
   border-radius: 8px;
   border: 2px solid #83E509;
 }
+a{
+  font-size: 20px !important;
+}
 .EsqSenha{
   display: flex;
   justify-content: center;
-  font-size: 22px;
-  font-weight: 200;
+  margin-top: 10px;
+  margin-left: 10px;
   text-decoration: none;
+}
+#BtnEntrar{
+  margin-top: 60px;
+  width: 42%;
+  height: 32px;
+  border-radius: 10px;
+  border: 2px solid #83E509;
+}
+#BtnRegistrar{
+  margin-top: 30px;
+  width: 34%;
+  height: 32px;
+  border-radius: 10px;
+  border: 2px solid #83E509;
 }
