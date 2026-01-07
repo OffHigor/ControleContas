@@ -1,0 +1,78 @@
+.login-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: linear-gradient(135deg, rgba(232,235,240,0.40), rgba(225,230,237,0.55)), url('../assets/BackgroundSistema.png') no-repeat center bottom;
+    background-size: cover;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    color: #1F2A36;
+    font-size: var(--font-base);
+}
+
+.login-card{
+    display: flex;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(2,6,23,0.4);
+    width: min(960px, 72vw);
+    min-height: 0;
+}
+
+.login-side{
+    flex: 1 1 50%;
+    background: #0B3048;
+    padding: 40px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo{
+    width: 269px;
+    max-width: 291px;
+    max-height: 224px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.login-form{
+    flex: 1 1 48%;
+    background: #ffffff;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 12px;
+    color:#233142;
+}
+
+.login-form form{ width:100%; max-width:460px; }
+
+.login-form h2{ margin:0 0 8px 0; }
+.login-form .lead{ margin:0 0 16px 0; color:#5b677b; }
+
+.login-form label{display:block; margin-bottom:8px; color:#4d5666; font-size: var(--font-small);}
+.login-form input{width:100%; padding:12px 14px; border:1px solid #d9dde3; border-radius:10px; font-size: var(--font-base);}
+.login-form input:focus{outline:none; border-color:#255E8C; box-shadow:0 6px 18px rgba(37,94,140,0.18);}
+.login-form button{display:inline-block; width:100%; padding:12px 16px; background:#255E8C; color:#fff; border:none; border-radius:10px; cursor:pointer; box-shadow:0 8px 24px rgba(11,48,72,0.22); font-size: var(--font-nav);}
+.login-form button:hover{background:#0B3048; color:#fff;}
+
+@media (max-width:820px){
+    .login-card{flex-direction:column; width:96vw; height:auto; max-height:none; overflow:visible; border-radius:18px}
+    .login-side{order:1; padding:20px}
+    .login-form{order:2; padding:20px; max-width:100%; flex:1 1 auto;}
+    .login-form form{ max-width:100%; }
+    .login-container{
+        padding:20px 14px 32px;
+        align-items:flex-start;
+        background: linear-gradient(135deg, rgba(232,235,240,0.40), rgba(225,230,237,0.55)), url('../assets/BackgroundMobile.jpg') no-repeat center bottom;
+        background-size: cover;
+    }
+}

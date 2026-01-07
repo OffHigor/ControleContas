@@ -1,0 +1,34 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1F2A36;
+  background-color: #E8EBF0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --font-base: 16px;
+  --font-small: 14px;
+  --font-nav: 16px;
+  --font-title: 20px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #E8EBF0 url('./assets/BackgroundSistema.png') no-repeat center bottom;
+  background-size: cover;
+  color: #1F2A36;
+  font-size: var(--font-base);
+}
+
+@media (min-width: 960px) {
+  :root {
+    --font-base: 17px;
+    --font-small: 15px;
+    --font-nav: 20px;
+    --font-title: 26px;
+  }
+}

@@ -1,0 +1,31 @@
+.historico-card{ padding:16px }
+
+.historico-filters{ display:flex; gap:12px; align-items:center; margin-bottom:12px }
+.historico-filters label{ display:block; margin-bottom:4px; color:#1F2A36; font-size:var(--font-small); }
+.historico-filters select{ background:#fff; color:#1F2A36; }
+.historico-filters select{
+	padding:8px 12px;
+	font-size:var(--font-small);
+	min-width:140px;
+	border:1px solid #d9dde3;
+	border-radius:6px;
+}
+
+.historico-item{ border-bottom:1px solid #eee; padding:8px 0 }
+.historico-item .meta{ font-size:12px; color:#4d5666 }
+
+.historico-item .valor{ font-weight:600 }
+
+.valor.entrada{ color:#1F9A55 }
+.valor.saida{ color:#C53B2C }
+
+@media (max-width: 820px){
+	.historico-filters{ flex-wrap:wrap; }
+	.historico-filters > div{ width:100%; }
+	.historico-filters select{ width:100%; }
+}
+
+@media (max-width: 540px){
+	.historico-card{ padding:12px; }
+	.historico-item{ padding:6px 0; }
+}

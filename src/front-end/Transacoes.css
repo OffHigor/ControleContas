@@ -1,0 +1,85 @@
+.transacoes-card{
+  padding:16px;
+  max-width:520px;
+  width:100%;
+  margin:0 auto;
+}
+
+.transacoes-card h3{ text-align:center; margin-bottom:12px }
+
+.transacoes-card form{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  max-width:520px;
+  margin:0 auto;
+}
+
+.transacoes-card form > div{ margin-bottom:0 }
+
+.transacoes-card label{ display:block; margin-bottom:4px; font-size:var(--font-small) }
+.transacoes-card label{ color:#1F2A36; }
+
+.transacoes-card input[type="text"],
+.transacoes-card input[type="number"],
+.transacoes-card input[type="email"],
+.transacoes-card input[type="password"],
+.transacoes-card input[type="tel"],
+.transacoes-card input,
+.transacoes-card select{
+  width:100%;
+  padding:8px 10px;
+  border:1px solid #d9dde3;
+  border-radius:4px;
+  box-sizing:border-box;
+  background:#fff;
+  color:#1F2A36;
+}
+
+.transacoes-card input[type="date"]{ -webkit-appearance:auto; appearance:auto; }
+.transacoes-card input[type="date"]::-webkit-calendar-picker-indicator{
+  cursor:pointer;
+  opacity:1;
+  filter: none;
+}
+
+.checkbox-group{ display:flex; gap:8px; flex-wrap:wrap; justify-content:center }
+.checkbox-group label{ background:#eef7f7; padding:4px 8px; border-radius:6px; }
+
+.transacoes-card .msg{ margin-top:8px; color:#1F2A36 }
+
+.transacoes-card button{
+  padding:8px 12px;
+  background:#255E8C;
+  color:#fff;
+  border:0;
+  border-radius:6px;
+  font-size: var(--font-nav);
+}
+.transacoes-card button:hover{ background:#0B3048; color:#fff; }
+
+.transacoes-card{ min-height:520px }
+
+.tipo-group{ display:flex; align-items:center; gap:16px; justify-content:center; flex-wrap:wrap }
+.radio-option{ display:flex; align-items:center; gap:6px; font-weight:600 }
+.radio-option.entrada{ color:#43a047 }
+.radio-option.saida{ color:#f44336 }
+
+@media (max-width: 768px){
+  .transacoes-card{ padding:12px; }
+  .transacoes-card{ max-width:100%; }
+  .transacoes-card form{ max-width:100%; }
+  .checkbox-group{ justify-content:flex-start; }
+  .transacoes-card button{ width:100%; }
+}
+
+@media (max-width: 540px){
+  .checkbox-group{ gap:6px; }
+  .checkbox-group label{ width:48%; box-sizing:border-box; }
+  .tipo-group{ gap:10px; }
+}
+
+@media (max-width: 420px){
+  .transacoes-card{ max-width:100%; width:100%; margin:0; padding:12px 10px; box-sizing:border-box; }
+  .transacoes-card form{ max-width:100%; }
+}
